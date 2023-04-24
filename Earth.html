@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth Animation</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: url(galaksi.jpg);
+            background-size: cover;
+        }
+        .earth{
+            width: 380px;
+            height: 380px;
+            overflow: hidden;            
+            border-radius: 50%;
+        }
+       
+        .earth-map{
+            width: 380px;
+            height: 380px;
+            background: url(dünya.jpg);
+            background-size: cover;
+            animation: earth 100s linear 0s infinite;
+        }
+        @keyframes earth {
+            from{}
+            to{
+                background-position: -10000px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="earth">
+        <div class="earth-map"></div>
+    </div>
+</body>
+</html>
